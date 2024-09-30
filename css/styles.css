@@ -16,4 +16,8 @@ html {
   --secondary-white: #ffffff;
   --font-weight-regular: 500;
   --font-weight-bold: 700;
+  --font-fraunces: "Fraunces", system-ui;
+}
+body {
+  font-family: "Montserrat", sans-serif;
 }
