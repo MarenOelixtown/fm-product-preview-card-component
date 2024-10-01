@@ -14,20 +14,21 @@
 
     <title>Frontend Mentor | Product preview card component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <article>
+      <article class="product-card">
         <picture>
           <source
             srcset="/images/image-product-desktop.webp"
@@ -36,20 +37,30 @@
           <img
             src="/images/image-product-mobile.webp"
             alt="Gabrielle Essence Eau De Parfum bottle"
+            class="product-card__image"
           />
         </picture>
-        <section>
-          <p>Perfume</p>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
-          <p>
+        <section class="product-card__item">
+          <p class="product-card__category">Perfume</p>
+          <h1 class="product-card__title">Gabrielle Essence Eau De Parfum</h1>
+          <p class="product-card__description">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <div>
-            <p>$149.99</p>
-            <p>$169.99</p>
+          <div class="product-card__price">
+            <p class="product-card__price-current">$149.99</p>
+            <p class="product-card__price-original">$169.99</p>
           </div>
-          <button>Add to Cart</button>
+          <button
+            class="product-card__cart-button"
+            aria-label="Add Gabrielle Essence Eau De Parfum to cart"
+          >
+            <img
+              src="/images/icon-cart.svg"
+              alt="Cart Icon"
+              class="product-card__cart-icon"
+            />Add to Cart
+          </button>
         </section>
       </article>
     </main>
